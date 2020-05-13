@@ -1,0 +1,185 @@
+body {
+    color: #110038;
+    background-color: #FFF4FD;
+}
+
+
+/* clase para barra gradiante de color */
+
+.back-gradient {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: #ffffff;
+}
+
+
+/* ---------------- */
+
+.bar {
+    box-shadow: 0 1px 0 0 #110038;
+}
+
+.logo {
+    background-image: url('../images/gifOF_logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Regular button */
+
+.regular-button {
+    background-color: #F7C9F3;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.regular-button:hover,
+.regular-button:active {
+    background-color: #E6BBE2;
+    outline: #110038 dotted 1px;
+    outline-offset: -4px;
+}
+
+
+/* single button */
+
+.single-button .underline {
+    text-decoration: underline;
+    color: #110038;
+}
+
+
+/* hover */
+
+.single-button:hover {
+    outline: #110038 dotted 1px;
+}
+
+
+/* active */
+
+.single-button:active {
+    color: #b4b4b4;
+    border-style: none;
+}
+
+.single-button:active .underline {
+    color: #b4b4b4;
+}
+
+.button-down {
+    background-color: #F7C9F3;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.theme-options {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.theme-options .theme-button {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.theme-options .theme-button:hover {
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.container-search {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.container-search input {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.container-search .regular-button {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+
+.container-search .regular-button:hover,
+.container-search .regular-button:active {
+    background-color: #E6BBE2;
+}
+
+.container-search .regular-button:disabled {
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #B4B4B4;
+}
+
+
+/* ---------------Section Suggestion------------------ */
+
+.division-bar {
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.box {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.gif .blue-button {
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.gif .blue-button:hover,
+.gif .blue-button:active {
+    outline: #110038 dotted 1px;
+    outline-offset: -4px;
+    background-color: #3A72DB;
+}
+
+
+/* ---------------Section Search Results------------------ */
+
+
+/* ------------mis gifos---------- */
+
+.search-results .gif-box-results:hover,
+.box-create-gifos,
+.container-capture-gif,
+.container-upload-gifos {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.regular-button.recording {
+    background-color: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    color: #ffffff;
+}
+
+.container-capture-gif .progress-bar-box .play-btn {
+    background: #F7C9F3;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    border: 1px solid #110038;
+}
+
+.container-capture-gif .progress-bar-box .progress-bar {
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+}
+
+.container-capture-gif .progress-bar-box .progress-bar .progress-square {
+    background: #999999;
+}
+
+.container-capture-gif .progress-bar-box .progress-bar .progress-square.active {
+    background: #F7C9F3;
+}

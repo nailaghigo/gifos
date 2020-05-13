@@ -1,0 +1,642 @@
+/* font-family: 'Chakra Petch', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 140px;
+    width: 100%;
+}
+
+img {
+    background-color: transparent;
+}
+
+.theme-options.hidden,
+#search-results-container,
+.box-create-gifos.hidden,
+.container-capture-gif.hidden,
+.container-capture-gif .capture-gif-buttons.hidden,
+.container-capture-gif .capture-gif-buttons.alternative.hidden,
+.container-upload-gifos.hidden {
+    display: none;
+}
+
+
+/* -------------Barra de navegacion-------------------- */
+
+.bar {
+    font-size: 12px;
+    height: 23px;
+    letter-spacing: 0;
+    margin-bottom: 2px;
+    padding: 3px 0 3px 8px;
+}
+
+.nav-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 19px;
+    padding-top: 35px;
+}
+
+.nav-bar .wrap-logo {
+    align-items: center;
+    display: flex;
+}
+
+.nav-bar .wrap-logo .go-back-arrow {
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+}
+
+.nav-bar .wrap-logo .logo {
+    height: 64px;
+    width: 105px;
+}
+
+
+/* ********************************************* */
+
+
+/* ---------------BUTTONS----------------------- */
+
+
+/* ********************************************* */
+
+.buttons {
+    display: flex;
+}
+
+
+/* ---------REGULAR BUTTON--------- */
+
+.regular-button {
+    align-items: center;
+    border: 1px solid #110038;
+    color: #110038;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 36px;
+    justify-content: center;
+    margin-left: 16px;
+    text-decoration: none;
+    width: 144px;
+}
+
+.regular-button.white {
+    background: #FFF4FD;
+}
+
+.regular-button.white:hover,
+.regular-button.white:active {
+    background: #E6E6E6;
+    outline: #110038 dotted 1px;
+    outline-offset: -4px;
+}
+
+
+/* ---------COMBINED BUTTON--------- */
+
+.combined-button {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+}
+
+.combined-button .regular-button {
+    width: 133px;
+}
+
+.combined-button .button-down {
+    width: 36px;
+}
+
+
+/* DESPLEGABLE */
+
+.button-down {
+    margin-right: 16px;
+    margin-left: 0;
+    width: 36px;
+}
+
+
+/* hover */
+
+.button-down:hover,
+.button-down:active {
+    outline: #110038 dotted 1px;
+    outline-offset: -4px;
+}
+
+
+/* ---------SINGLE BUTTON--------- */
+
+.single-button {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    margin-left: 16px;
+    text-align: left;
+    text-decoration: none;
+    width: 96px;
+}
+
+
+/* **************************************** */
+
+
+/* --------------THEMES BUTTON------------- */
+
+
+/* **************************************** */
+
+.theme-options {
+    flex-direction: column;
+    height: 102px;
+    justify-content: space-between;
+    left: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 36px;
+    width: 170px;
+}
+
+.theme-options .theme-button {
+    font-size: 16px;
+    height: 36px;
+    list-style: none;
+    padding: 7px 0 7px 16px;
+    width: 150px;
+}
+
+.theme-options.open {
+    display: flex;
+    z-index: 5;
+}
+
+
+/* ------------------Section Search--------------- */
+
+.container-search {
+    height: 100px;
+    margin-bottom: 64px;
+    position: relative;
+}
+
+.container-search .back-gradient {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 3px;
+    padding: 3px;
+    position: relative;
+    top: 2px;
+    width: 1194px;
+}
+
+.container-search .search-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-search input {
+    margin: 12px 0 12px 15px;
+    padding: 13px 0 13px 16px;
+    width: 1057px;
+}
+
+.container-search .regular-button {
+    font-size: 16px;
+    height: 36px;
+    margin: 18px 15px 18px 7px;
+    padding: 3px 10px;
+    width: 100px;
+}
+
+.container-search .expand {
+    display: none;
+    height: auto;
+    padding: 7px 130px 7px 17px;
+    z-index: 10;
+}
+
+.container-search .expand .suggested-options {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    margin: 10px 0;
+    padding: 7px 0 7px 16px;
+    width: 1057px;
+}
+
+.container-search .expand .suggested-options a {
+    color: #110038;
+    text-decoration: none;
+}
+
+.container-search .expand .suggested-options:hover {
+    background: #DBDBDB;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    outline: #110038 dotted 1px;
+    outline-offset: -4px;
+}
+
+.division-bar {
+    background: #FFFAFE;
+    color: #110038;
+    font-size: 14px;
+    margin-bottom: 18px;
+    margin-top: 64px;
+    padding: 7px 0 7px 7px;
+}
+
+.suggestion-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    align-items: center;
+    height: 313px;
+    width: 288px;
+}
+
+.box .back-gradient {
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    margin: 3px 4px 0 4px;
+    padding-left: 2px;
+    padding-right: 4px;
+    width: 280px;
+}
+
+.back-gradient span {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.gif {
+    display: flex;
+    height: 280px;
+    margin: 2px 4px 4px 4px;
+    position: relative;
+    width: 280px;
+}
+
+.gif .blue-button {
+    bottom: 10px;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 14px;
+    left: 10px;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 10px;
+    position: absolute;
+}
+
+.gif img {
+    width: inherit;
+}
+
+
+/*  Search results */
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-results .gif-box-results {
+    align-items: center;
+    display: flex;
+    height: 304px;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.search-results .gif-box-results.square {
+    width: 294px;
+}
+
+.search-results .gif-box-results.rectangle {
+    width: 596px;
+}
+
+.search-results .gif-box-results:hover {
+    outline: #110038 dotted 1px;
+    outline-offset: -4px;
+}
+
+.search-results .gif-box-results:hover .back-gradient {
+    display: block;
+}
+
+.search-results .gif-box-results img.square,
+.search-results .gif-box-results img.rectangle {
+    height: 296px;
+}
+
+.search-results .gif-box-results img.square {
+    width: 286px;
+}
+
+.search-results .gif-box-results img.rectangle {
+    width: 588px;
+}
+
+.search-results .gif-box-results .back-gradient {
+    bottom: 4px;
+    display: none;
+    left: 4px;
+    overflow: hidden;
+    padding: 0 5px;
+    position: absolute;
+}
+
+.search-results .gif-box-results .back-gradient.square {
+    width: 286px;
+}
+
+.search-results .gif-box-results .back-gradient.rectangle {
+    width: 588px;
+}
+
+.search-results .gif-box-results .back-gradient a {
+    color: #ffffff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+
+/* ------------mis gifos---------- */
+
+.box-create-gifos {
+    display: flex;
+    flex-direction: column;
+    height: 366px;
+    margin: 75px auto 153px auto;
+    position: relative;
+    width: 684px;
+}
+
+.box-create-gifos .back-gradient {
+    height: 24px;
+    left: 2px;
+    padding-left: 4px;
+    position: relative;
+    top: 3px;
+    width: 678px;
+}
+
+.box-create-gifos .logo-file {
+    align-items: center;
+    display: flex;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.box-create-gifos .logo-file img {
+    margin-right: 15px;
+}
+
+.box-create-gifos .logo-file .title-bold {
+    font-weight: bold;
+}
+
+.box-create-gifos .text {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 17px 100px 28px 73px;
+}
+
+.box-create-gifos .gifos-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 36px;
+}
+
+
+/* capture-gif */
+
+.container-capture-gif {
+    display: flex;
+    flex-direction: column;
+    height: 548px;
+    margin: auto;
+    position: relative;
+    width: 860px;
+}
+
+.container-capture-gif .back-gradient {
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    left: 2px;
+    padding-right: 10px;
+    padding-left: 4px;
+    position: relative;
+    top: 3px;
+    width: 854px;
+}
+
+.container-capture-gif .gif-box {
+    align-items: center;
+    align-self: center;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    display: flex;
+    justify-content: center;
+    width: 838px;
+    height: 440px;
+    margin-top: 8px;
+}
+
+.container-capture-gif .gif-box .img-preview {
+    display: none;
+    height: 434px;
+    width: 832px;
+}
+
+.container-capture-gif .gif-box .uploading {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 140px 0;
+}
+
+.container-capture-gif .gif-box .uploading .bold {
+    font-weight: bold;
+    line-height: 22px;
+    margin-bottom: 39px;
+}
+
+.container-capture-gif .gif-box .uploading .progress-bar-box {
+    justify-content: center;
+}
+
+.container-capture-gif .gif-box .uploading p {
+    color: rgba(17, 0, 56, 0.64);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+    text-align: center;
+}
+
+.container-capture-gif .capture-gif-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 21px 12px 16px 0;
+}
+
+.container-capture-gif .capture-gif-buttons.alternative {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-capture-gif .capture-gif-buttons .timer {
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    margin-left: 11px;
+    width: 124px;
+}
+
+.container-capture-gif .capture-gif-buttons .regular-button {
+    margin-left: 0px;
+}
+
+.container-capture-gif .capture-gif-buttons .button-down {
+    margin-right: 0px;
+}
+
+.container-capture-gif .progress-bar-box {
+    display: flex;
+    height: 22px;
+}
+
+.container-capture-gif .progress-bar-box.small {
+    width: 266px;
+}
+
+.container-capture-gif .progress-bar-box.big {
+    width: 324px;
+}
+
+.container-capture-gif .progress-bar-box .play-btn {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-capture-gif .progress-bar-box .progress-bar {
+    align-items: center;
+    display: flex;
+    height: 22px;
+    justify-content: space-between;
+    margin-left: 4px;
+    padding: 0 3px;
+    width: 100%;
+}
+
+.container-capture-gif .progress-bar-box .progress-bar .progress-square {
+    height: 17px;
+    width: 10px;
+}
+
+
+/* subir guifos */
+
+.container-upload-gifos {
+    display: flex;
+    flex-direction: column;
+    height: 391px;
+    margin: auto;
+    width: 721px;
+}
+
+.container-upload-gifos .back-gradient {
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    left: 2px;
+    padding-right: 10px;
+    padding-left: 4px;
+    position: relative;
+    top: 3px;
+    width: 716px;
+}
+
+.container-upload-gifos .box-upload-gifos {
+    align-items: center;
+    display: flex;
+    margin: 60px 36px 40px 24px;
+}
+
+.container-upload-gifos .box-upload-gifos .gif-box-small {
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    display: flex;
+    height: 196px;
+    justify-content: center;
+    width: 371px;
+}
+
+.container-upload-gifos .box-upload-gifos .gif-box-small #uploadedGifo {
+    height: 191px;
+    width: 365px;
+}
+
+.container-upload-gifos .box-upload-gifos .upload-buttons {
+    display: flex;
+    flex-direction: column;
+    height: 124px;
+    justify-content: space-between;
+    width: 256px;
+}
+
+.container-upload-gifos .box-upload-gifos .upload-buttons span {
+    font-weight: bold;
+    padding-left: 14px;
+}
+
+.container-upload-gifos .box-upload-gifos .upload-buttons .regular-button.white {
+    width: 256px;
+}
+
+.upload-gif-buttons {
+    align-self: flex-end;
+    display: flex;
+    margin-right: 54px;
+}

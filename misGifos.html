@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Gifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/images/globe_img.png">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="/assets/styles/sailor-day.css" id='theme'>
+</head>
+
+<body>
+
+    <!-- bienvenido -->
+
+    <header class="back-gradient bar">
+        ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+    </header>
+
+    <!-- header -->
+
+    <div class="container">
+
+        <div class="nav-bar">
+            <div class="wrap-logo">
+                <a href="/index.html">
+                    <img class="go-back-arrow" src="/assets/images/arrow.svg" alt="goBack" />
+                </a>
+                <div class="logo"></div>
+            </div>
+        </div>
+
+        <div id="step1" class="box-create-gifos">
+
+            <div class="back-gradient">
+                <span>Crear Guifos</span>
+            </div>
+
+            <div class="logo-file">
+                <img src="/assets/images/window_img.png" alt="logo">
+                <span class="title-bold">
+                    Aquí podrás crear tus propios guifos
+                </span>
+            </div>
+
+            <div class="text">
+
+                <span>
+                    Crear tu <strong>guifo</strong> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son: 
+                    <br>
+                    <strong>1)</strong> Dar permisos de acceso a la cámara (sólo por el tiempo de uso) 
+                    <br>
+                    <strong>2)</strong> Capturar tu momento guifo 
+                    <br>
+                    <strong>3)</strong> Revisar el momento 
+                    <br>
+                    <strong>4)</strong> Listo para subir y compartir! 
+                    <br>    
+                    ¿Quieres comenzar a crear tu <strong>guifo</strong> ahora?
+                </span>
+            </div>
+
+            <div class="gifos-buttons">
+                <a class="regular-button white" href="/index.html" id="cancelBtn">
+                    Cancelar
+                </a>
+
+                <button class="regular-button" id="startBtn">
+                    Comenzar
+                </button>
+            </div>
+
+        </div>
+
+
+        <div id="step2" class="container-capture-gif hidden">
+            <div class="back-gradient">
+                <span id="titleWindowBar"></span>
+                <img src="/assets/images/close.svg" alt="close">
+            </div>
+            <div class="gif-box">
+                <video id="captureGif" width="832" height="434" autoplay playsinline></video>
+                <img src="data:," id="captureGifImg" class="img-preview" alt="imgPreview" />
+            </div>
+
+            <!-- Botones comenzar grabacion -->
+            <div class="capture-gif-buttons" id="startRecordingControls">
+                <div class="combined-button">
+                    <button id="captureGifBtnDown" class="regular-button button-down" disabled>
+                        <img src="/assets/images/camera.svg" alt="capturar">
+                    </button>
+                    <button id="captureGifBtn" class="regular-button" disabled>
+                        Capturar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Botones finalizar la grabacion -->
+            <div id="stopRecordingControls" class="capture-gif-buttons alternative hidden">
+                <div id="timerRecording" class="timer">00:00:00:00</div>
+                <div class="combined-button">
+                    <button id="stopGifBtnDown" class="regular-button button-down recording">
+                        <img src="/assets/images/recording.svg" alt="capturar">
+                    </button>
+                    <button id="stopGifBtn" class="regular-button recording">
+                        Listo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Botones visualizacion de la grabacion -->
+            <div id="afterRecordingControls" class="capture-gif-buttons alternative hidden">
+                <div id="timerReplay" class="timer">00:00:00:00</div>
+                <div class="progress-bar-box small">
+                    <div class="play-btn">
+                        <img src="/assets/images/forward.svg" alt="play">
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                        <span class="progress-square"></span>
+                    </div>
+                </div>
+                <button id="repeatGifBtn" class="regular-button white">
+                    Repetir captura
+                </button>
+                <button id="uploadGifBtn" class="regular-button">
+                    Subir Guifo
+                </button>
+            </div>
+        </div>
+
+
+
+        <!-- agregar clase hidden -->
+        <div id="step3" class="container-capture-gif hidden">
+            <div class="back-gradient">
+                <span>Subiendo Guifo</span>
+                <img src="/assets/images/close.svg" alt="close">
+            </div>
+
+            <div class="gif-box">
+                <div class="uploading">
+                    <img src="/assets/images/globe_img.png" alt="globe">
+                    <span class="bold">Estamos subiendo tu guifo…</span>
+                    <div class="progress-bar-box big">
+                        <div class="progress-bar">
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                            <span class="progress-square"></span>
+                        </div>
+                    </div>
+                    <p>Tiempo restante: <del>38 años</del> algunos minutos</p>
+                </div>
+            </div>
+
+            <div class="capture-gif-buttons">
+                <button id="cancelGifo" class="regular-button white">
+                    Cancelar
+                </button>
+            </div>
+
+        </div>
+
+        <div id="step4" class="container-upload-gifos hidden">
+            <div class="back-gradient">
+                <span>Subiendo Guifo</span>
+                <img src="/assets/images/close.svg" alt="close">
+            </div>
+            <div class="box-upload-gifos">
+                <div class="gif-box-small">
+                    <img id="uploadedGifo" src="data:," alt="uploadedGifo" />
+                </div>
+                <div class="upload-buttons">
+                    <span>Guifo creado con éxito</span>
+                    <a id="copyUrlGif" class="regular-button white" href="#">
+                        Copiar Enlace Guifo
+                    </a>
+                    <a id="downloadGif" class="regular-button white" href="#" target="_blank">
+                        Descargar Guifo
+                    </a>
+                </div>
+            </div>
+
+            <div class="upload-gif-buttons">
+                <button id="finishBtn" class="regular-button">
+                    Listo
+                </button>
+            </div>
+
+        </div>
+
+
+        <section id="misGifos">
+            <div class="division-bar">
+                Mis guifos:
+            </div>
+
+            <div id="myGifosContainer" class="search-results"></div>
+
+        </section>
+
+
+
+
+    </div>
+
+
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="/assets/js/video.js"></script>
+
+</body>
+
+</html>

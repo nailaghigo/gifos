@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gif.Os</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/images/globe_img.png">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="/assets/styles/sailor-day.css" id="theme">
+
+</head>
+
+<body>
+    <!-- bienvenido -->
+
+    <header class="back-gradient bar">
+        ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+    </header>
+
+    <!-- header -->
+
+    <div class="container">
+
+        <div class="nav-bar">
+
+            <div class="wrap-logo">
+                <div class="logo"></div>
+            </div>
+
+            <nav class="buttons">
+                <a class="regular-button" href="/misGifos.html" rel="crear guifos">
+                    Crear Guifos
+                </a>
+
+                <div class="combined-button">
+                    <div class="regular-button" id="select-theme-btn" onclick="toggleThemeOptions()">
+                        Elegir tema
+                    </div>
+
+                    <div class="regular-button button-down" id="theme-options-btn" onclick="toggleThemeOptions()">
+                        <img src="/assets/images/dropdown.svg" alt="elegir-tema" id="theme-options-img">
+                    </div>
+
+                    <ul class="theme-options hidden" id="theme-options">
+                        <li class="theme-button" onclick="changeCSS('sailor-day', true)">Sailor Day</li>
+                        <li class="theme-button" onclick="changeCSS('sailor-night', true)">Sailor Night</li>
+                    </ul>
+                </div>
+
+                <a class="single-button" href="/misGifos.html#misGifos">
+                    <span class="underline">M</span>is Guifos
+                </a>
+            </nav>
+        </div>
+
+
+        <!-- Seccion Buscar -->
+        <section>
+            <div class="container-search">
+                <div class="back-gradient">Buscar</div>
+                <div class="search-wrapper">
+                    <input id="searchBox" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                    <button id="searchBtn" class="regular-button" disabled>
+                        <img id="searchBtnImg" src="assets/images/lupa_inactive.svg" alt="search">   
+                        Buscar
+                    </button>
+                </div>
+
+                <!-- Listado de sugerencias de busqueda -->
+                <div class="container-search expand"></div>
+            </div>
+        </section>
+
+
+        <!-- Seccion Sugerencia -->
+        <section>
+
+            <div class="division-bar">
+                Hoy te sugerimos:
+            </div>
+
+            <div id="suggestion-box" class="suggestion-box"></div>
+
+        </section>
+
+        <!-- Resultados de busqueda -->
+        <section id="search-section">
+            <div id="search-results-container" class="hidden ">
+                <div class="division-bar ">
+                    Resultados de busqueda:
+                </div>
+
+                <div id="search-results" class="search-results"></div>
+            </div>
+        </section>
+
+        <!-- Seccion Tendencias -->
+        <section id="trends-section">
+            <div class="division-bar ">
+                Tendencias:
+            </div>
+
+            <div id="trends-results" class="search-results"></div>
+        </section>
+
+
+    </div>
+
+    <script src="/assets/js/search.js"></script>
+    <script src="/assets/js/suggestions.js"></script>
+    <script src="/assets/js/trends.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
